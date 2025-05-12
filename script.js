@@ -1,5 +1,18 @@
 const bacheca = document.querySelector('.bacheca')
-console.log(bacheca)
+
+
+let creaCarta = (array) => {
+    let cardString = "";
+
+        array.forEach((element) => {
+            const { url, title } = element;
+            console.log(url, title);
+
+            cardString += `<div class="card">
+                <img src=${url} alt="">
+                <div id="testo">${title}</div>
+            </div>`})
+        }
 
 
     axios
@@ -21,10 +34,9 @@ console.log(bacheca)
         }
 
         )
-        console.log(cardString)
         bacheca.innerHTML = cardString
 
 
     })
-// const { url, title} = resp.data[0];
+
 
