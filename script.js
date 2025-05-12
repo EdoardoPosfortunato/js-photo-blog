@@ -28,6 +28,7 @@ let creaCarta = (array) => {
             console.log(url, title);
 
             cardString += `<div class="card">
+            <img id="puntina" src="./img/pin.svg" alt="">
                 <img src=${url} alt="">
                 <div id="testo">${title}</div>
             </div>`
