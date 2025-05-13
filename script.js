@@ -1,5 +1,4 @@
 const bacheca = document.querySelector('.bacheca')
-
 const hoverlay = document.querySelector('.hoverlay')
 
 
@@ -12,18 +11,13 @@ let creaCarta = (array) => {
         // console.log(url, title);
 
         cardString += `<div class="card" data-id="${id}">
-                <img id="puntina" src="./img/pin.svg" alt="">
+                <img class="puntina" src="./img/pin.svg" alt="">
                 <img class = "imgPricipale" src=${url} alt="">
                 <div id="testo">${title}</div>
             </div>`})
 
     return cardString
 }
-
-// // Bottene Hoverlay
-// overlayBtn.addEventListener("click", function () {
-//     hoverlay.classList.remove("d-flex")
-// })
 
 
 //AXIOS
@@ -40,7 +34,29 @@ axios
 
         const cards = document.querySelectorAll(".card")
 
+        /// Rotazione al passaggio del MOUSE
+
         cards.forEach(card => {
+
+            const puntina = card.querySelector(".puntina")
+            card.addEventListener("mouseenter", function () {
+                card.classList.add("rotate")
+                 puntina.classList.add("d-none")
+            })
+
+            card.addEventListener("mouseleave", function () {
+                card.classList.remove("rotate")
+                 puntina.classList.remove("d-none")
+            })
+
+        })
+
+
+
+        //al click l'immagine esce in primo piano 
+
+        cards.forEach(card => {
+
 
             card.addEventListener("click", function () {
 
@@ -63,7 +79,9 @@ axios
 
             })
 
-        });
+        })
+
     })
+
 
 
