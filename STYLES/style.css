@@ -49,13 +49,38 @@ a {
     background-position: center;
 }
 
+.hoverlay {
+ position: fixed;
+ z-index: 100;
+ background-color: rgba(146, 145, 145, 0.815);
+ height: 100vh;
+ width: 100vw;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ gap: 40px;
+ display: none;
+}
+
+#overlayImg {
+    width: 40vw;
+    aspect-ratio: 1;
+}
+
+#overlayBtn {
+    font-family:'Times New Roman', Times, serif;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
 .bacheca {
     /* background-color: aqua; */
     height: 100%;
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
     display: flex;
-    align-items: start;
+    align-items: center;
     justify-content: center;
     gap: 15px;
     flex-wrap: wrap;
@@ -73,6 +98,8 @@ a {
     justify-content: center;
     padding: 15px;
     position: relative;
+    
+    
 }
 
 #foto{
@@ -101,18 +128,24 @@ a {
 
 
 @media (max-width: 1100px) {
-  body {
-    .card {
+  .bacheca {
+    width: 80%;
+  }
+      .card {
     width: 45%;
 }
-  }
 }
 
 
 @media (max-width: 540px) {
-  body {
+      .bacheca {
+    width: 70%;
+  }
     .card {
     width: 90%;
-}
   }
+}
+
+.d-flex {
+    display: flex;
 }
