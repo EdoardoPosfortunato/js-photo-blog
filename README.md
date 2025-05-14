@@ -31,3 +31,29 @@ Ci sono diversi modi di farlo, prova a sperimentare :faccia_leggermente_sorriden
 **Bonus**
 Spostandosi col mouse sopra le foto, queste si zoommano, ruotano di 10 gradi e la loro ombra aumenta, il tutto in manierà fluida. Inoltre il mouse diventa un puntatore, per far capire all’utente che può cliccare
 
+
+
+<!-- <body>
+    <div class="hoverlay">
+
+    </div>
+    <header class="title">
+        <h2>ESTATE 2024</h2>
+    </header>
+    <main class="mainpart">
+            <div class="bacheca">
+                <div class="card">
+                    <img id="puntina" src="./img/pin.svg" alt="">
+                    <img id="foto" src="https://marcolanci.it/boolean/assets/pictures/1.png" alt="">
+                    <div id="testo"></div> 
+                </div>
+            </div>
+    </main>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.9.0/axios.min.js"
+        integrity="sha512-FPlUpimug7gt7Hn7swE8N2pHw/+oQMq/+R/hH/2hZ43VOQ+Kjh25rQzuLyPz7aUWKlRpI7wXbY6+U3oFPGjPOA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body> -->
