@@ -26,13 +26,19 @@ axios
     .get("https://lanciweb.github.io/demo/api/pictures/")
     .then((resp) => {
 
+        // console.log(resp);
+
         let data = resp.data;
 
-        let cardString = creaCarta(data)
+        // console.log(data);
 
-        bacheca.innerHTML = cardString
+        let cardString = creaCarta(data);
 
-        const cards = document.querySelectorAll(".card")
+        bacheca.innerHTML = cardString;
+
+        const cards = document.querySelectorAll(".card");
+
+        // console.log(cards)
 
         /// Rotazione al passaggio del MOUSE
 

@@ -149,7 +149,7 @@ a {
     z-index: 998;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.623); 
     transition: transform 0.3s ease;
-    overflow: visible;
+    overflow: hidden;
 }
 
 .card:hover {
